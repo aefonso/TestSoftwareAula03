@@ -7,8 +7,10 @@ describe('Testes de Inicialização e Exibição', () => {
     it('Teste de Componentes do Index', () => {
         const { getByText, getByTestId } = render(<App />);
         expect(getByText("Texto Inicial")).toBeTruthy();
+        expect(getByTestId("bt-index")).toBeTruthy();
+    
         
-        const botao = getByTestId("bt-index");
+        const botao = (getByTestId("bt-index"));
         fireEvent.press(botao);
 
       
