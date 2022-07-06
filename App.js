@@ -1,7 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Index from './src/pages/Index';
-import Dobro from '.src/pages/Index';
+import Dobro from './src/pages/Dobro';
 
 const Stack = createNativeStackNavigator();
 
