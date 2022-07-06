@@ -8,12 +8,15 @@ describe('Testes de Inicialização e Exibição', () => {
         const { getByText, getByTestId } = render(<App />);
         expect(getByText("Texto Inicial")).toBeTruthy();
         expect(getByTestId("bt-index")).toBeTruthy();
-    
-        
+    })
+})
+
+describe('Testes de Navegação', () => {
+    it('Navegação de Index para Dobro', () => {
+        const { getByTestId } = render(<App />);
         const botao = (getByTestId("bt-index"));
         fireEvent.press(botao);
 
-      
     })
 })
 
