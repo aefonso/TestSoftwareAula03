@@ -5,10 +5,11 @@ export default props => {
         <View>
             <Text>Texto Inicial</Text>
             <Button
-            title="Ir para dobro"
+            title="Ir para dobro" 
             onPress={() => {
                 props.navigation.navigate("Dobro");
             }}
+            testID="bt-index"
             />
         </View>
     )
